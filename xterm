@@ -1,0 +1,3 @@
+# TCP
+xhost +RHOST
+xterm -display LHOST:0 or DISPLAY=LHOST:0 xterm
