@@ -3,6 +3,7 @@
 Fácil de usar:
 
 1 - Identifique a linguagem de programação em execução no site.
+
 2 - Substitua "LHOST" pelo seu endereço IP e "LPORT" pela porta que você pretende usar.
 
 Para abrir uma porta em sua máquina, utilize o seguinte comando:
